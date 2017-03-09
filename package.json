@@ -1,0 +1,26 @@
+{
+  "name": "bookapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottengle/ps_rwswnae.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottengle/ps_rwswnae/issues"
+  },
+  "homepage": "https://github.com/scottengle/ps_rwswnae#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "jscs": "^3.0.7",
+    "jshint": "^2.9.4",
+    "nodemon": "^1.11.0"
+  }
+}
