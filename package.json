@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/scottengle/ps_rwswnae#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "gulp": "^3.9.1",
     "jscs": "^3.0.7",
