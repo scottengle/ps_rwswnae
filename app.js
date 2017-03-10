@@ -1,5 +1,6 @@
 (function() {
-  
+  'use strict';
+
   var express = require('express'),
       mongoose = require('mongoose'),
       bodyParser = require('body-parser'),
@@ -7,7 +8,12 @@
       port = process.env.PORT || 3000,
       bookRouter = require('./routes/bookRoutes')();
 
-  var db = mongoose.connect('mongodb://localhost/bookAPI');
+  var db;
+  if(process.env.ENV === 'test') {
+    db = mongoose.connect('mongodb://localhost/bookAPI_test');
+  } else {
+    db = mongoose.connect('mongodb://localhost/bookAPI');
+  }
   
   app.use(bodyParser.urlencoded());
   app.use(bodyParser.json());
@@ -22,4 +28,5 @@
     console.log('Running on PORT ' + port);
   });
 
+  module.exports = app;
 }());
